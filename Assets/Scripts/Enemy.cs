@@ -7,13 +7,14 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float enemySpeed = 1f;
     private int randomness;
+    [SerializeField] private int enemyHealth = 1;
 
 
     // Start is called before the first frame update
     void Start()
     {
         randomness = UnityEngine.Random.Range(0, 3);
-        Debug.Log(randomness);
+        Destroy(gameObject, 10f);
     }
 
     // Update is called once per frame
@@ -69,7 +70,6 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "EnemyRelocatorLeft")
         {
-            Debug.Log("sola çarptı");
             if (randomness == 0 ||randomness == 2 )
             {
                 transform.position += transform.right * 6.4f;
@@ -80,13 +80,20 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.tag == "EnemyRelocatorRight")
         {
-            Debug.Log("sağa çarptı");
             if (randomness == 1 || randomness == 3)
             {
                 transform.position -= transform.right * 6.4f;
             }
 
             else { return; }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "PlayerLaser")
+        {
+            collision.gameObject.SetActive(false);
         }
     }
 
