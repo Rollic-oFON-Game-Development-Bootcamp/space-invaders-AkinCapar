@@ -6,9 +6,8 @@ public class JoystickPlayerExample : MonoBehaviour
 {
     public float speed;
     public DynamicJoystick dynamicJoystick;
-    private Vector2 playerPos;
+    [SerializeField] private Vector2 playerPos;
     // public Rigidbody2D rb;
-
 
     public void FixedUpdate()
     {
