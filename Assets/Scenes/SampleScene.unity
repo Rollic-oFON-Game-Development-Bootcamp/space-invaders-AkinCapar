@@ -320,29 +320,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &644388372 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6194142089495405193, guid: a22a2c2bb193645c998f152769af27ff, type: 3}
-  m_PrefabInstance: {fileID: 6194142090000331933}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &644388373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644388372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22522ce679e814278aa9e6548f77df94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLaser: {fileID: 1512350277162058158, guid: 83585c6e356dc4b9ca835f0c461fc87c, type: 3}
-  playerLaserSpeed: 4
-  laserLifetime: 2
-  firingRate: 0.5
-  gameStarted: 1
-  playerHealth: 3
 --- !u!1 &968007207
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,18 +604,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6194142089495405191, guid: a22a2c2bb193645c998f152769af27ff, type: 3}
-      propertyPath: speed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6194142089495405191, guid: a22a2c2bb193645c998f152769af27ff, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6194142089495405191, guid: a22a2c2bb193645c998f152769af27ff, type: 3}
-      propertyPath: playerPos.y
-      value: -4.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6194142089495405191, guid: a22a2c2bb193645c998f152769af27ff, type: 3}
       propertyPath: dynamicJoystick
       value: 

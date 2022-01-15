@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6194142089495405195}
   - component: {fileID: 6194142089495405191}
   - component: {fileID: 6194142089495405188}
+  - component: {fileID: 644388373}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -96,8 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37d705c8e9115e439ec799186182634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.125
+  speed: 0.1
   dynamicJoystick: {fileID: 0}
+  playerPos: {x: 0, y: -4.5}
 --- !u!58 &6194142089495405188
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114,3 +116,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.056571305}
   serializedVersion: 2
   m_Radius: 0.4384287
+--- !u!114 &644388373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6194142089495405193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22522ce679e814278aa9e6548f77df94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLaser: {fileID: 1512350277162058158, guid: 83585c6e356dc4b9ca835f0c461fc87c, type: 3}
+  laserLifetime: 2
+  firingRate: 0.5
+  gameStarted: 1
+  playerHealth: 3

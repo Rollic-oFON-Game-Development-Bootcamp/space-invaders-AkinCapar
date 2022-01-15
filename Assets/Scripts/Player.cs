@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject playerLaser;
-    [SerializeField] private float playerLaserSpeed;
     [SerializeField] private float laserLifetime;
     [SerializeField] private float firingRate;
     [SerializeField] private bool gameStarted;
@@ -36,6 +35,8 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "EnemyLaser")
         {
+            collision.gameObject.SetActive(false);
+
             if(playerHealth == 1)
             {
                 Destroy(gameObject); //game over

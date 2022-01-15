@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "EnemyRelocatorLeft")
         {
-            if (randomness == 0 ||randomness == 2 )
+            if (randomness == 0 || randomness == 2 )
             {
                 transform.position += transform.right * 6.4f;
             }
